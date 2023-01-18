@@ -5,7 +5,7 @@ function UseMemos() {
   const [name, setName] = useState('')
   const [address, setAddress] = useState('Nam sách')
   const getAddress = useMemo(() => {
-    return  address 
+    return address
   }, [address])
   return (
     <section>
