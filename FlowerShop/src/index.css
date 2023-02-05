@@ -5,9 +5,57 @@
 html {
   height: 100%;
   line-height: 1.2;
+  color: rgb(57, 57, 57);
 }
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
+}
+.wrap {
+  max-width: 700px;
+  margin: 100px auto;
+}
+#table {
+  width: 100%;
+}
+#table,
+th,
+tr {
+  border: 1px solid hsl(2deg, 0%, 91%);
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  background-color: transparent;
+  border-top: 1 solid #dadde1;
+  min-height: 1.9rem;
+}
+td {
+  min-width: 6em;
+  min-height: 1.9em;
+  height: 38px;
+  max-height: 1.9em;
+  border: 1px solid hsl(2deg, 0%, 91%);
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: nowrap;
+  text-align: left;
+  box-sizing: border-box;
+  user-select: none;
+}
+td > p {
+  height: 100%;
+}
+td > p:focus {
+  outline: 1px solid rgb(0, 166, 255);
+}
+.button {
+  background-color: rgb(0, 166, 255);
+  border-radius: 4px;
+  margin: 12px 0;
+  padding: 12px;
+  color: #fff;
 }
